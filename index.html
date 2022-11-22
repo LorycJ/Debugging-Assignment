@@ -1,0 +1,110 @@
+<!--Declares to the browser this is an HTML document.-->
+<!DOCTYPE html>
+<!--Start the HTML page and sets the lang to English-->
+<html lang="en">
+<!--Head tag is used to include the meta tags 
+    and links to the javaScript code page.-->
+    <head>
+        <!--Title of the tab at the top of the page-->
+        <title>Space Casino</title>
+        <!--Add a space background-->
+        <!--CSS information here-->
+    <style>
+        /*CSS code here*/
+        body { /*This is the opening scope operator*/
+            /*This sets the background image to space.jpg*/
+            background-image: url("space.jpg");
+            /*This keeps the background from repeating*/
+            background-repeat: no-repeat;
+            /*This keeps the background from scrolling, when you scroll through the page*/
+            background-attachment: fixed;
+            /*This tag will have the all the letters on the page be white*/
+            color: white;
+            /*This line will set the text to the center of the page so it's not on 1 side of the page*/
+            text-align: center;
+        } /*This is the closing scope operator*/
+
+        h1 {
+            /*This will set the text that was assigned to h1 to be in the center of the page*/
+            text-align: center;
+            /*This will assign the font size for the h1 tag*/
+            font-size: 75px;
+        }
+
+        h2 {
+            /*This will set the text written in the h2 text to be in the center*/
+            text-align: center;
+            /*The font size will tell what size font the h2 tag should be*/
+            font-size: 50px;
+        }
+
+        p {
+            /*This will set the text inside the paragragh section to be set in the center*/
+            text-align: left;
+            /*This will set the font size for the paragragh*/
+            font-size: x-large;
+        }
+
+        #theFinalCountdown { /*This is the opening scope operator*/
+            /*This will set the text written for The Final Countdown to be in the center*/
+            text-align: center;
+            /*This will set the font size for The Final Countdown*/
+            font-size: xx-large;
+        }
+
+        button {
+            /*This sets what the background color should be for the button*/
+            background-color: white;
+            /*This will set the color for the button*/
+            color: green;
+            /*This will tell the button if it has a border*/
+            border: none;
+            padding: 15px 32px;
+            /*This will tell the text for the button to be in the center*/
+            text-align: center;
+            /*This will say if there is a text decoration*/
+            text-decoration: none;
+            /*This will tell the button what type of display it will be*/
+            display: inline-block;
+            /*This will set the font size for the text of the button*/
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            /*This will set what the border radius for the button is gonna be*/
+            border-radius: 42px;
+            /*This will tell what font-weight the button text will have*/
+            font-weight: bold;
+            /*This will set the button to a set location so it won't just be placed randomly*/
+            align-self: center;
+        }
+
+        button:hover {
+            /*This will show what background color the button will have when you hover over the button*/
+            background-color: transparent;
+            /*This will tell what the border is going to be*/
+            border: 2px solid #4CAF50;
+            /*This will tell what color the text will be when you hover over the button*/
+            color: white;
+        }
+    </style>        
+        <!--links to the javaScript code page-->
+        <script src="JavaScriptCode.js">      
+        </script> 
+    </head>
+    <!--Body tag is used to include the background image and 
+        the text for the header of the page.-->
+    <body>
+        <h1>Space Casino</h1>
+        <h2>Where the odds are in your favor</h2>      
+        <img src="insidecasino.jpg" alt="Inside Casino" width="500" height="333">
+        <script>
+            displayWelcome();
+            displayInstructions();
+            document.write("Space Game");
+            document.write("<br/><br/><br/>");
+            play();
+        </script>
+        <br/><br/><br/>
+    </body>
+
+</html>
